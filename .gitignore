@@ -374,5 +374,11 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/python,jetbrains,visualstudiocode,windows,macos,linux
 
 
+
+include
+lib64
+pyvenv.cfg
+bin
 js.json
 user_id_list.txt
+.idea

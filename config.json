@@ -1,15 +1,13 @@
 {
     "user_id_list": "user_id_list.txt",
     "only_crawl_original": 0,
+    "page_weibo_count": 10,
     "since_date": 1,
     "start_page": 1,
-    "page_weibo_count": 10,
-    "write_mode": [
-        "csv"
-    ],
-    "original_pic_download": 1,
+    "write_mode": [ "csv", "sqlite" ],
+    "original_pic_download": 0,
     "retweet_pic_download": 0,
-    "original_video_download": 1,
+    "original_video_download": 0,
     "retweet_video_download": 0,
     "original_live_photo_download": 1,
     "retweet_live_photo_download": 0,
@@ -17,9 +15,9 @@
     "comment_max_download_count": 100,
     "download_repost": 1,
     "repost_max_download_count": 100,
-    "user_id_as_folder_name": 0,
+    "user_id_as_folder_name": 1,
     "remove_html_tag": 1,
-    "cookie": "your cookie",
+    "cookie": "",
     "mysql_config": {
         "host": "localhost",
         "port": 3306,

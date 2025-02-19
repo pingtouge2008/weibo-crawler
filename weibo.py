@@ -590,8 +590,10 @@ class Weibo(object):
                         retries = 0  # 重置重试计数器
                         continue
                     else:
-                        logger.error("验证码验证失败或未完成，程序将退出。")
-                        sys.exit()
+                        # logger.error("验证码验证失败或未完成，程序将退出。")
+                        # sys.exit()
+                        logger.error(f"验证码验证失败或未完成。跳过用户 {str(self.user_config["user_id"])}")
+                        return -1
             except RequestException as e:
                 retries += 1
                 sleep_time = backoff_factor * (2 ** retries)
